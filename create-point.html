@@ -1,0 +1,70 @@
+<!--criar um novo arquivo html para criar outras janelas aqui uma nova janela-->
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaSis - Cadastros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <!--SEMPRE QDO CRIAR ARQUIVO .CSS COLOCAR A REFERENCIA AQUIII ** SEMPRE NO MEIO-->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/responsividade.css">
+</head>
+<body>
+<div id="page-create-point">
+        <header>
+            <img src="/extras-aula-1/icones/logo.svg" alt="aqui eo logo mann"><!--logo lado esquerdo-->
+            <a href=""><span></span>Voltar para o Inicio
+            </a>
+        </header>
+<form action="">
+    <h1>Cadastro do ponto de coleta</h1>
+    <fieldset><!--campos de formularios principal-->
+        <legend><!--aqui colocar legend antes de escrever nos formularios-->
+            <h2>Dados da entidade</h2>
+        </legend>
+        <div class="field"><!--essa caixa field do form, 1 campo em 1 linha-->
+                <label for="name">Nome da entidade</label><!--escrito do formulario-->
+                <input type="text" name="name"><!--aqui onde vai colher oque a pessoa digitar-->
+        </div>
+
+        <div class="field-group"><!--field grup=2 campos em 1 linha-->
+                <div class="field"><!--feito os 2 grupos .field*2-->
+                    <!--label+input Para colocar o texto e o campo que vai receber os dados digitados-->
+                    <label for="endereco">Endereco</label>
+                    <input type="text" name="endereco">
+                </div>
+                <div class="field">
+                    <label for="endereco2">Número /Complemento</label>
+                    <input type="text" name="endereco2">
+                </div>
+        </div>
+            <div class="field-group">
+                <div class="field">
+                <label for="estado">Estado</label>
+                <select name="uf"><!--automatizando seriviços para escolher cidades-->
+                <option value="">Selecione o Seu Estado</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="cidade">Cidade</label>
+                <select name="cidade" disabled><!--automatizando seriviços para escolher cidades-->
+                <option value="">Escolha a sua Cidade</option> 
+                </select>
+            </div>
+            </div>
+    </fieldset>
+    <button type="submit">cadastrar pontos de coleta</button><!--submit= enviar formulario -->
+    <fieldset>
+        <legend>
+            <h2>itens de coleta</h2>
+        </legend>
+    </fieldset>
+    
+
+</form>        
+        
+</div>
+</body>
+</html>

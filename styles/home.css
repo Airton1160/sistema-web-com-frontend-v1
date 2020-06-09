@@ -1,0 +1,87 @@
+/*header, pega todo mundo que esta dentro de vc e mostra(display) como flex*/
+#page-home header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+#page-home {
+    height: 50vmax;
+    background: url('../extras-aula-1/icones/home-background.svg') no-repeat;  /*imagens de fundo exx*/
+    background-position: 35vh ;    /*posicao da imagem fundo*/
+    background-size: 500px;
+    background-position: center;       /*posicao da imagem fundo */
+}
+#page-home .content {
+    width: 95%;
+    max-width: 1400px;
+    /*Max Width éo limite em que o ajuste sera feito automaticamente*/
+    margin: 0 auto;
+}
+#page-home main p {
+    font-size: 20px;
+    color: springgreen;
+    /*coloca margem e separa no boxx*/
+    margin-top: 40px;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+}
+#page-home header a span {/*aqui config do span do lado*/
+    display: flex;
+    background-image: url('../extras-aula-1/icones/organicos.svg');
+    width: 20px;
+    height: 20px;
+}
+#page-home header a {/*aqui pegou o elemento 'a' e esta formatando ele*/
+    display: flex;
+    color: rgb(0, 0, 0); /*cor do texto*/
+    font-weight: bold;/*negrito*/
+    text-decoration: none;/*tira o sublinhado do texto*/
+    color: var(--Litle-color);
+}
+#page-home main {
+    max-width: 820px;/*largura de tudo texto que esta dentro do main*/
+    color: var(--Litle-color);
+}
+#page-home main h1 {
+    font-size: 20px;
+    color: var(--Litle-color);
+    margin-top: 60px;
+}
+#page-home main a {/*todo 'a' dentro main*/
+    width: 400px;/*largura*/
+    max-width: 370px;/* nao vai passar de 360*/
+    height: 80px;/*altura*/
+    background: var(--primary-color);/*aqui vaiavel usada no padrao*/
+    text-decoration: none;
+    border-radius: 6px;/*aqui arrendodamento das bordas*/
+    display: flex;/*1º deixar display flex*/
+    /*justify-content: center; aqui colocou o texto no meio*/
+    transition: 1300ms;/*aqui suavidade na hra de mudar a cor qdo passa o mouse*/
+}
+#page-home main a:hover {/*aqui muda a cor qdo passa o mouse em cima*/
+    background-color: #570c2f
+}
+#page-home main a span {/*aqui personalizando um span - toda mudanca na caixa e feita por aqui no pai*/
+    height: 80px;
+    width: 80px;
+    background-color: rgba(218, 17, 17, 0.192);/*cor rgb com alpha= trasparencia*/
+    border-radius: 6px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+}    
+#page-home main a span::after {/*pseudo elements - colocando um icone ao lado*/
+        content: "";/*aqui para deixar inline*/
+        background-image: url(../extras-aula-1/icones/search.svg);
+        height: 21px;/*altura*/
+        width: 21px;/*largura*/
+}
+#page-home main a strong {
+            flex: 1;/* eh um preenchimento automatico*/
+            height: 10px;
+            width: 40px;
+            font-weight: bold;
+            margin-top: 28px;
+            text-align: center;
+}

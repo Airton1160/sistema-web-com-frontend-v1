@@ -1,0 +1,30 @@
+
+/*MEDIA QUERYES*/
+@media (min-width: 1400px) {/*eh um conjunto de regras do css para algumas configs, e responsividades tbm*/
+    #page-home {
+        background-position-x: 500px;/*imagem encolhe automaticamente responsivo*/
+    }
+    #page-home .content {/*aqui aplicado o alinhamento dos itens*/
+       align-items: center;
+       text-align: center;
+    }
+    #page-home header a {
+       position: absolute;/*aqui para colocar o texto para baixo, abre outras propriedades*/
+       bottom: 48px;/*deixar em baixo*/
+       left: 50%;/*recuo de margem*/
+       transform: translateX(-50%);/*para ajuste automatico de responsividade*/
+   }
+   #page-home main {/*alinhamento do texto*/
+           text-align: center;
+   }
+}
+@media (max-width: 1250px) {/*aqui posicionamento da responsividade na tela, de acordo com o tamanho*/
+    #page-home {
+        background-position-x: 600px;
+    }
+}
+@media (max-height:100px) {
+    #page-home {
+        background-position-y: 100px;
+    }
+}

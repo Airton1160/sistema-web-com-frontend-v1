@@ -1,0 +1,100 @@
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#page-create-point header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+#page-create-point header a {
+    display: flex;
+    text-decoration: none;
+    color: crimson;
+    transition: 1300ms;
+    font-weight: bold;
+    align-items: center;
+    border-radius: 8px;
+}
+#page-create-point header a:hover {
+    background-color: rgba(141, 13, 13, 0.548);
+}
+#page-create-point header a span {/*sempre qdo criar um span*icone antes ou dps do texto, criar antes arquivo span no html<span>*/
+    margin-right: 16px;
+    background-image: url('../extras-aula-1/icones/arrow-left.svg');
+    display: flex;
+    width: 20px;
+    height: 25px;
+    justify-content: center;
+}
+form {
+    margin-top: 49px;
+    background-color: rgba(186, 186, 228, 0.39);
+    padding: 64px;/*preenchimento, exemplo qdo for form*/
+    border-radius: 9px;
+    max-width: 700px;
+    min-width: 445px;
+    margin: 80px auto;
+}
+form h1 {
+    color: darkgreen;
+    font-size: 40px;
+}
+form fieldset {
+    margin-top: 40px;
+    border: 0;
+}
+form legend {
+    margin-bottom: 40px;/*aqui espaco em baixo p poder dar certo*/
+}
+form legend h2 {
+    font-size: 24px;
+    color: darkslateblue;
+}
+form .field {/*tudo que esta dentro da .field será com display flex*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;/*aqui esticando os campos*/
+    margin-bottom: 24px;/*da espaco entre eles*/
+    
+}
+form .field-group {
+    display: flex;
+}
+form input, 
+form select {   
+    background-color: rgb(77, 77, 77);
+    border: 0;
+    padding: 16px 18px;/*aumenta a expessura*/
+    border-radius: 9px;
+    font-size: 18px;
+    outline: none;/*tira as bordas da caixa*/
+    
+}
+form select {
+    -webkit-appearance: none;/*aqui tira zas setas */
+    -moz-appearance: none;
+    appearance: none;
+}
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+form .field-group .field + .field {
+    margin-left: 30px;
+}
+form button {
+    height: 56px;
+    width: 200px;
+    border-radius: 9px;
+    background-color: rgb(54, 54, 148);
+    color: rgb(43, 177, 31);
+    font-weight: bold;
+    transition: 1200ms;
+    
+}
+form button:hover {
+    background-color: rgba(243, 0, 0, 0.664);
+}
