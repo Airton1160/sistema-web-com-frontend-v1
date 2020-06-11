@@ -34,7 +34,7 @@ function getCities(event) {
 document.querySelector("select[name=uf]")
         .addEventListener("change", getCities)
 
-/* AGORA FAZENDO A PARTE DO ITENS DE COLETA MANIPULACAO DE ICONES E BOTOES*/
+/* AGORA FAZENDO A PARTE DO ITENS DE COLETA MANIPULACAO DE ICONES E BOTÕES*/
 
 
 
