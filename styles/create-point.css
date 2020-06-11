@@ -30,34 +30,35 @@
     justify-content: center;
 }
 form {
-    margin-top: 49px;
     background-color: rgba(186, 186, 228, 0.39);
-    padding: 64px;/*preenchimento, exemplo qdo for form*/
+    padding: 14px;/*preenchimento, exemplo qdo for form*/
     border-radius: 9px;
-    max-width: 700px;
-    min-width: 445px;
-    margin: 80px auto;
+    max-width: 550px;
+    min-width: 300px;
+    margin: 10px auto;
 }
 form h1 {
-    color: darkgreen;
-    font-size: 40px;
+    color: rgb(32, 7, 54);
+    font-size: 30px;
+    text-align: center;
 }
 form fieldset {
-    margin-top: 40px;
+    margin-top: 20px;
     border: 0;
 }
 form legend {
-    margin-bottom: 40px;/*aqui espaco em baixo p poder dar certo*/
+    margin-bottom: 20px;/*aqui espaco em baixo p poder dar certo*/
 }
 form legend h2 {
-    font-size: 24px;
-    color: darkslateblue;
+    font-size: 16px;
+    color: rgb(95, 6, 83);
+    text-align: center;
 }
 form .field {/*tudo que esta dentro da .field será com display flex*/
     flex: 1;
     display: flex;
     flex-direction: column;/*aqui esticando os campos*/
-    margin-bottom: 24px;/*da espaco entre eles*/
+    margin-bottom: 15px;/*da espaco entre eles*/
     
 }
 form .field-group {
@@ -67,9 +68,9 @@ form input,
 form select {   
     background-color: rgb(77, 77, 77);
     border: 0;
-    padding: 16px 18px;/*aumenta a expessura*/
+    padding: 13px 14px;/*aumenta a expessura*/
     border-radius: 9px;
-    font-size: 18px;
+    font-size: 14px;
     outline: none;/*tira as bordas da caixa*/
     
 }
@@ -80,13 +81,13 @@ form select {
 }
 form label{
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 form .field-group .field + .field {
     margin-left: 30px;
 }
 form button {
-    height: 56px;
+    height: 36px;
     width: 200px;
     border-radius: 9px;
     background-color: rgb(54, 54, 148);
@@ -97,4 +98,36 @@ form button {
 }
 form button:hover {
     background-color: rgba(243, 0, 0, 0.664);
+}
+/*AQUI E A PARTE DE ICONES E BOTOES DA TELA DE CADASTRO FORMS*/
+
+.itens-grid {
+    display: grid;/*aqui icones em modo coluna e linhas*/
+    grid-template-columns: 1fr 1fr 1fr ;/*aqui fazendo colunas, ja colocando os tamanhos*/
+    gap: 16px;/*faz a separação do grid, separa os icones agrupado*/
+   
+}
+.itens-grid li {
+    background-color: rgb(87, 97, 90);
+    border-radius: 9px;
+    border: 2px solid rgb(87, 97, 90);
+    list-style: none;
+    height: 100px;
+    padding: 22px 10px 109px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;/*esse espacamento de itens ficou em vertical */
+    text-align: center;
+    cursor: pointer;/*coloca a maozinha e outras animacoes no cursor*/
+}
+.itens-grid li span {/*span sempre o icone que vai antes ou depois do texto em especifico*/
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.itens-grid li.selected {
+    background-color: rgba(25, 2, 37, 0.432);
+    border: 4px solid rgba(255, 0, 0, 0.486);/*aqui coloca a borda, expessura e cor*/
+
 }

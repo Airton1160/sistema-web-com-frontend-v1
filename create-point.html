@@ -26,32 +26,34 @@
         </legend>
         <div class="field"><!--essa caixa field do form, 1 campo em 1 linha-->
                 <label for="name">Nome da entidade</label><!--escrito do formulario-->
-                <input type="text" name="name"><!--aqui onde vai colher oque a pessoa digitar-->
+                <input type="text" name="name" required><!--aqui onde vai colher oque a pessoa digitar-->
         </div>
 
         <div class="field-group"><!--field grup=2 campos em 1 linha-->
                 <div class="field"><!--feito os 2 grupos .field*2-->
                     <!--label+input Para colocar o texto e o campo que vai receber os dados digitados-->
                     <label for="endereco">Endereco</label>
-                    <input type="text" name="endereco">
+                    <input type="text" name="endereco" required><!--required = campo obrigatorio-->
                 </div>
                 <div class="field">
                     <label for="endereco2">Número /Complemento</label>
-                    <input type="text" name="endereco2">
+                    <input type="text" name="endereco2" required>
                 </div>
         </div>
             <div class="field-group">
                 <div class="field">
                 <label for="estado">Estado</label>
-                <select name="uf"><!--automatizando seriviços para escolher cidades-->
+                <select name="uf" required><!--automatizando seriviços para escolher cidades-->
                 <option value="">Selecione o Seu Estado</option>
+                
                 </select>
             </div>
             <div class="field">
                 <label for="cidade">Cidade</label>
-                <select name="cidade" disabled><!--automatizando seriviços para escolher cidades-->
-                <option value="">Escolha a sua Cidade</option> 
+                <select name="cidade" disabled required><!--automatizando seriviços para escolher cidades-->
+                <option value="">Selecione a Cidade</option>
                 </select>
+                <input type="hidden" name="state"><!--aqui escondendo o nome na url-->
             </div>
             </div>
     </fieldset>
@@ -60,11 +62,40 @@
         <legend>
             <h2>itens de coleta</h2>
         </legend>
+        <div class="itens-grid">
+            <li data-id="1" class="selected"><!--aqui vai rreceber toda arte do quadrado do icone-->
+                <img src="/extras-aula-1/icones/lampadas.svg" alt="Lâmpadas"><!--alt= acessibilidade-->
+                <span>Lâmpadas</span>
+            </li>
+            <li data-id="2"><!--aqui vai rreceber toda arte do quadrado do icone-->
+                <img src="/extras-aula-1/icones/baterias.svg" alt="Pilhas e Baterias"><!--alt= acessibilidade-->
+                <span>Pilhas e Baterias</span>
+            </li>
+            <li data-id="3"><!--aqui vai rreceber toda arte do quadrado do icone-->
+                <img src="/extras-aula-1/icones/papeis-papelao.svg" alt="papel"><!--alt= acessibilidade-->
+                <span>Papeis e papelão</span>
+            </li>
+            <li data-id="4"><!--aqui vai rreceber toda arte do quadrado do icone-->
+                <img src="/extras-aula-1/icones/eletronicos.svg" alt="residuos eletronicos"><!--alt= acessibilidade-->
+                <span>Residuos Eletrônicos</span>
+            </li>
+            <li data-id="5"><!--aqui vai rreceber toda arte do quadrado do icone-->
+                <img src="/extras-aula-1/icones/organicos.svg" alt="residuos organicos"><!--alt= acessibilidade-->
+                <span>Residuos organicos</span>
+            </li>
+            <li data-id="6"><!--aqui vai rreceber toda arte do quadrado do icone-->
+                <img src="/extras-aula-1/icones/oleo.svg" alt="oleo de cozinha usado"><!--alt= acessibilidade-->
+                <span>Óleo de Cozinha </span>
+            </li>
+
+
+        </div>
     </fieldset>
     
 
 </form>        
         
 </div>
+<script src="/styles/create-point.js"></script>
 </body>
 </html>
