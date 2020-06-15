@@ -23,7 +23,7 @@ function getCities(event) {
             fetch(url).then( (res) => { return res.json() } )
             .then( cities => {
                     
-                for(const city of cities) {
+                for( const city of cities ) {
                     citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
                 }
                 citySelect.disabled = false//aqui deve se habilitar para funcionar
@@ -32,7 +32,7 @@ function getCities(event) {
         }
 
 document.querySelector("select[name=uf]")
-        document.addEventListener("change", getCities)
+        .addEventListener("change", getCities)
 
 /* AGORA FAZENDO A PARTE DO ITENS DE COLETA MANIPULACAO DE ICONES E BOTÕES*/
 /* PEGAR TODOS OS LI'S E COLOCA O ITENSTOCOLLECTION*/
