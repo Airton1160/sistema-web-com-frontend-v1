@@ -1,0 +1,71 @@
+#modal {
+    background-color: rgba(11, 9, 75, 0.795);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#modal.hide{
+    display: none;
+}
+#modal .content {
+    color: rgb(163, 151, 151);
+    width: 420px;
+    text-align: center;
+}
+#modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#modal .header a {
+    background-image: url("../extras-aula-1/icones/x.svg");
+    height: 24px;
+    width: 24px;
+    display: flex;
+    font-size: 0.01px;/*aqui diminuiu no maxx para nao aparecer*/
+}
+#modal .header h1 {
+    color: rgba(0, 0, 0, 0.822);
+    font-size: 36px;
+    line-height: 42px;
+    margin-left: 50px;
+}
+#modal form label {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 10px;
+    
+}
+#modal form .field {
+    display: flex;
+    
+}
+#modal form input {
+    flex: 1;
+    background-color: rgb(26, 24, 24);
+    border-radius: 9px 0 0 9px;
+    border: 0;
+    padding: 16px 24px;/*para engrossar a caixa*/
+    color: royalblue;
+    font-size: 19px;
+} 
+#modal form button {
+    height: 72px;
+    width: 72px;
+    border-radius: 0 9px 9px 0;
+    border: 0;
+    background-color: purple;
+    transition: 1400ms;
+}
+#modal form button:hover {
+    background-color: rgb(172, 16, 16);
+    
+}
+
+
