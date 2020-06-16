@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlphaSis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <!--SEMPRE QDO CRIAR ARQUIVO .CSS COLOCAR A REFERENCIA OU CADENCIA AQUIII SEMPRE NO MEIO-->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    
+    <link rel="stylesheet" href="/styles/responsividade.css">
+</head>
+<body>
+
+<div id="page-home">
+    <div class="content ">
+        <header>
+            <img src="/extras-aula-1/icones/logo.svg" alt="aqui eo logo mann"><!--logo lado esquerdo-->
+            <a href="/create-point">            <!--<span>→]</span>coloca icones ao lado -->
+                cadastre um ponto de coleta
+            </a>
+        </header>
+        <main><!--aqui eh como se fosse o documento principal-->
+            <h1>ajudamos pessoas a encontrar pontos de coleta de forma eficiente</h1>
+            <p class="red">Seu marktplace de coleta de residuos</p><!--h3 letras pequenas-->
+            <a href="#"><span></span><strong>Pesquisar pontos de coleta</strong></a><!--referencia com o 'a'-->
+        </main>
+        
+    </div>
+
+</div>
+<script src="/styles/create-point.js"></script>
+<div id="modal" class="hide">
+    <div class="content">
+        <div class="header">
+            <h1>Pontos de Coleta</h1>
+            <a href="#">Fechar</a>
+        </div>
+        <form action="/search-results.html"><!--no form action, entre"" colocar para onde vai dps que terminar o form-->
+            <label for="search">Cidade</label>
+                <div class="search field">
+                    <input type="text" name="search"placeholder="Aqui digite qual cidade procura"><!--placeholder= fica o nome de fundo numa caixa de txt-->
+                    <button><img src="/extras-aula-1/icones/search.svg" alt="buscar"></button>
+                </div>
+        </form>
+    </div>
+</div>
+<script src="/styles/index.js"></script><!--ARQUIVO PARA ABRIR OUTRA JANELA DEVE FICAR NO FINAL AQUIII-->
+</body>
+</html>
