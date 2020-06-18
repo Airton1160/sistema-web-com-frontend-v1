@@ -7,9 +7,10 @@
 }
 #page-home {
     height: 50vmax;
-    background: url('../extras-aula-1/icones/home-background.svg') no-repeat;  /*imagens de fundo exx*/
-    background-position: 35vh ;    /*posicao da imagem fundo*/
-    background-size: 500px;
+    background-image: url("../icones/home-background.svg"); /*imagens de fundo exx*/
+    background-repeat: no-repeat;
+    background-position: 200% ;    /*posicao da imagem fundo*/
+    background-size: 600px;
     background-position: center;       /*posicao da imagem fundo */
 }
 #page-home .content {
@@ -28,7 +29,7 @@
 }
 #page-home header a span {/*aqui config do span do lado*/
     display: flex;
-    background-image: url('../extras-aula-1/icones/organicos.svg');
+    background-image: url("../icones/organicos.svg");
     width: 20px;
     height: 20px;
 }
@@ -73,7 +74,7 @@
 }    
 #page-home main a span::after {/*pseudo elements - colocando um icone ao lado*/
         content: "";/*aqui para deixar inline*/
-        background-image: url(../extras-aula-1/icones/search.svg);
+        background-image: url("../icones/search.svg");
         height: 21px;/*altura*/
         width: 21px;/*largura*/
 }

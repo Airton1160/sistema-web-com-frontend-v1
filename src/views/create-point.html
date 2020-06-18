@@ -1,4 +1,5 @@
-{% extends layout.html %}
+{% extends "layout.html" %}
+
 {% set pageId = "page-create-point" %}
 
 {% block title %}
@@ -11,7 +12,7 @@
 
 {% block content %}
     {% include "partials/page-header.html" %}
-    <form action="/create-point">
+    <form action="">
         <h1>Cadastro do ponto de coleta</h1>
         <fieldset>
             <!--campos de formularios principal-->
@@ -19,11 +20,16 @@
                 <!--aqui colocar legend antes de escrever nos formularios-->
                 <h2>Dados da entidade</h2>
             </legend>
-            <div class="field">
-                <!--essa caixa field do form, 1 campo em 1 linha-->
-                <label for="name">Nome da entidade</label>
-                <!--escrito do formulario-->
-                <input type="text" name="name" required="required"><!--aqui onde vai colher oque a pessoa digitar--></div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Imagem da entidade</label>
+                    <input type="url" name="imagem" placeholder="http://..." required="required">
+                </div>
+            </div>
 
             <div class="field-group">
                 <!--field grup=2 campos em 1 linha-->
@@ -55,46 +61,48 @@
                     <input type="hidden" name="state"><!--aqui escondendo o nome na url--></div>
             </div>
         </fieldset>
-        <button type="submit">cadastrar pontos de coleta</button>
+
         <!--submit= enviar formulario -->
         <fieldset>
             <legend>
                 <h2>itens de coleta</h2>
+                <span>Selecione um ou mais itens abaixo:
+                </span>
             </legend>
             <div class="itens-grid">
                 <li data-id="1">
                     <!--aqui vai rreceber toda arte do quadrado do icone-->
-                    <img src="/extras-aula-1/icones/lampadas.svg" alt="Lâmpadas">
+                    <img src="icones/lampadas.svg" alt="Lâmpadas">
                     <!--alt= acessibilidade-->
                     <span>Lâmpadas</span>
                 </li>
                 <li data-id="2">
                     <!--aqui vai rreceber toda arte do quadrado do icone-->
-                    <img src="/extras-aula-1/icones/baterias.svg" alt="Pilhas e Baterias">
+                    <img src="icones/baterias.svg" alt="Pilhas e Baterias">
                     <!--alt= acessibilidade-->
                     <span>Pilhas e Baterias</span>
                 </li>
                 <li data-id="3">
                     <!--aqui vai rreceber toda arte do quadrado do icone-->
-                    <img src="/extras-aula-1/icones/papeis-papelao.svg" alt="papel">
+                    <img src="icones/papeis-papelao.svg" alt="papel">
                     <!--alt= acessibilidade-->
                     <span>Papeis e papelão</span>
                 </li>
                 <li data-id="4">
                     <!--aqui vai rreceber toda arte do quadrado do icone-->
-                    <img src="/extras-aula-1/icones/eletronicos.svg" alt="residuos eletronicos">
+                    <img src="icones/eletronicos.svg" alt="residuos eletronicos">
                     <!--alt= acessibilidade-->
                     <span>Residuos Eletrônicos</span>
                 </li>
                 <li data-id="5">
                     <!--aqui vai rreceber toda arte do quadrado do icone-->
-                    <img src="/extras-aula-1/icones/organicos.svg" alt="residuos organicos">
+                    <img src="icones/organicos.svg" alt="residuos organicos">
                     <!--alt= acessibilidade-->
                     <span>Residuos organicos</span>
                 </li>
                 <li data-id="6">
                     <!--aqui vai rreceber toda arte do quadrado do icone-->
-                    <img src="/extras-aula-1/icones/oleo.svg" alt="oleo de cozinha usado">
+                    <img src="icones/oleo.svg" alt="oleo de cozinha usado">
                     <!--alt= acessibilidade-->
                     <span>Óleo de Cozinha
                     </span>
@@ -102,7 +110,7 @@
 
             </div>
         </fieldset>
-
+        <button type="submit">cadastrar pontos de coleta</button>
     </form>
 {% endblock content %}
 

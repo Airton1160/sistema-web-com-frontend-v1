@@ -12,7 +12,7 @@ html {
     font-family: 'Yatra One', cursive;    /*fonte tirada do google*/
 }
 body {
-    background: #5a545a;/*cor do fundo corpo inteiro*/
+    background-color: rgb(56, 59, 61);
     -webkit-font-smoothing: antialiased;
 }
 /*aqui todos h's vao ter fontes e cores padroes programaveis*/
